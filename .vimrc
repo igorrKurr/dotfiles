@@ -90,7 +90,7 @@ colorscheme molokai
 ":autocmd Syntax * syn match ExtraWhitespace /\s\+$\| \+\ze\\t/
 autocmd BufWritePre * :%s/\s\+$//e
 " Lovely linenumbers
-set nu
+" set nu
 
 " Searching
 set hlsearch
@@ -203,3 +203,6 @@ let g:auto_save_silent = 1
 set ts=2 sw=2 expandtab
 
 autocmd BufWritePre * :%s/\s\+$//e "remove trailing whitespaces
+
+set relativenumber
+set number
