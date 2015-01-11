@@ -1,7 +1,6 @@
 #!/bin/bash
 
-cp -rf .vimrc ~/.vimrc
-
-cp -rf .bashrc ~/.bashrc
+ln -sf /home/igor/dotfiles/.bashrc /home/igor/.bashrc
+ln -sf /home/igor/dotfiles/.vimrc /home/igor/.vimrc
 
 echo "Copied!"

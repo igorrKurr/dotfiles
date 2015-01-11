@@ -5,6 +5,7 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
+Bundle 'guns/vim-clojure-static'
 Bundle 'vim-scripts/vim-auto-save'
 Plugin 'jelera/vim-javascript-syntax'
 " Dependencies of snipmate
