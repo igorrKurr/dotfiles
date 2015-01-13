@@ -207,3 +207,4 @@ autocmd BufWritePre * :%s/\s\+$//e "remove trailing whitespaces
 
 set relativenumber
 set number
+set autoread
