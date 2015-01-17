@@ -208,3 +208,4 @@ autocmd BufWritePre * :%s/\s\+$//e "remove trailing whitespaces
 set relativenumber
 set number
 set autoread
+let g:ctrlp_custom_ignore = {'dir':  '\v[\/](tmp|bower_components|node_modules)$'}

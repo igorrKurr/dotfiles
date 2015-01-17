@@ -116,12 +116,12 @@ fi
 function parse_git_branch () {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
- 
+
 RED="\[\033[0;31m\]"
 YELLOW="\[\033[0;33m\]"
 GREEN="\[\033[0;32m\]"
 NO_COLOR="\[\033[0m\]"
- 
+
 PS1="$GREEN\u$NO_COLOR:\w$YELLOW\$(parse_git_branch)$NO_COLOR\$ "
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
@@ -136,3 +136,4 @@ alias rs='rails s'
 alias rc='rails c'
 alias rd='rake db:reset&&curl -XDELETE http://localhost:9200/_river/china_goods&&curl -XDELETE http://localhost:9200/china_goods&&curl -XDELETE http://localhost:5984/china_goods&&rake db:init'
 alias es='ember server'
+alias esl='ember server --proxy http://localhost:3000'
